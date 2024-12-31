@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the revolutionary impact of quantum computing technologies on industries and innovation.">
+    <title>Quantum Computing Technology</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-image: url('quantumcomputing.jpg');
+            background-size: cover;
+            color: white;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header styles */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 9px;
+            background: black; /* Dark blue theme for header */
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header .logo {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: white; /* White text for logo */
+        }
+
+        header nav {
+            margin-left: 10px;
+        }
+
+        header a {
+            text-decoration: none;
+            color: white; /* White text for navigation */
+            font-weight: 600;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+
+        header a:hover {
+            color: grey;
+        }
+
+        /* Hero Section (Body background image with animation) */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            position: relative;
+            z-index: 0;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4); /* Dark overlay for better text visibility */
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            color: white;
+            animation: fadeIn 2s ease-in;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin: 20px 0;
+            animation: fadeIn 2.5s ease-in;
+        }
+
+        .hero .cta {
+            margin-top: 20px;
+            padding: 15px 30px;
+            background: #2c3e50;
+            color: #bdc3c7;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .hero .cta:hover {
+            background-color: darkgray;
+            transform: scale(21.2rem);
+        }
+
+        /* Footer styles */
+        footer {
+            background: black; 
+            text-align: center;
+            padding: 20px 0px;
+            font-size: 0.9rem;
+            color: white; 
+            position: relative;
+            z-index: 100;
+            border-top: 1px solid #ddd;
+            margin-top: auto;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+
+            .hero .cta {
+                padding: 10px 20px;
+            }
+
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 10px 20px;
+            }
+
+            header .logo {
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+            }
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <div class="logo">QuantumTech</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to the Quantum Revolution</h1>
+            <p>Discover the limitless possibilities of Quantum Computing Technology.</p>
+            <a href="explore.html" class="cta">Explore More</a>
+        </div>
+    </section>
+    <footer>
+        &copy; 2024 QuantumTech. All Rights Reserved.
+    </footer>
+</body>
+</html>
